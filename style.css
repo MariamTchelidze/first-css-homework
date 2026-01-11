@@ -1,0 +1,281 @@
+/* reset.css */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f5f7;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* General styles */
+body {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+p,
+span {
+  font-family: "Inter", sans-serif;
+}
+/*  დიზაინის სტილები */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.header-nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #000000;
+}
+.header-nav-ul li {
+  list-style: none;
+}
+.header-nav-ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.header-nav-ul li a:hover {
+  color: #5b47d1;
+  transition: 0.2s ease-in-out;
+}
+/* Section 1 Bg-img Section */
+.section1 {
+  background-image: url(./assets/bg-img.jpg);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  gap: 1rem;
+}
+/* Section 2 grid view section */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.section2 h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+.section1 h1:hover,
+.section1 p:hover {
+  color: #5b47d1;
+  transition: 0.2s ease-in-out;
+}
+.section1 p {
+  font-size: 20px;
+}
+.grid-view {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.parent {
+  max-width: 360px;
+  width: auto;
+  height: 472px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.span-div,
+.content {
+  padding: 1rem;
+}
+.span-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.content h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.content p {
+  font-size: 15px;
+}
+#purple {
+  background-color: #c7b8ff;
+  height: 240px;
+  width: 100%;
+}
+#pink {
+  background-color: #ffb8d8;
+  height: 240px;
+  width: 100%;
+}
+#blue {
+  background-color: #b8e0ff;
+  height: 240px;
+  width: 100%;
+}
+#green {
+  background-color: #d4ffb8;
+  height: 240px;
+  width: 100%;
+}
+#yellow {
+  background-color: #ffe4b8;
+  height: 240px;
+  width: 100%;
+}
+#orange {
+  background-color: #ffd4b8;
+  height: 240px;
+  width: 100%;
+}
+/* Section3 სტილები */
+.section3 {
+  margin-top: 150px;
+  background-color: #252424;
+  padding: 20px;
+}
+.section3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+.section3 .section3-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.section3-nav1 {
+  max-width: 380px;
+  width: auto;
+}
+.section3-nav1 h3,
+.section3-nav2 h3,
+.section3-nav3 h3 {
+  color: #ffffff;
+}
+.section3-nav1,
+.section3-nav2,
+.section3-nav3 {
+  gap: 10px;
+  color: #a1a1a6;
+  text-align: left;
+  /* background-color: #b8e0ff; */
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+}
+.section3-nav2 ul,
+.section3-nav3 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.section3-nav2 ul li a,
+.section3-nav3 ul li a {
+  text-decoration: none;
+  color: #a1a1a6;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.section3-nav2 ul li a:hover,
+.section3-nav3 ul li a:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(2.6);
+  color: #5b47d1;
+  text-decoration: underline;
+  font-weight: 800;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: #86868b;
+}
