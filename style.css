@@ -79,13 +79,6 @@ h6 {
 body {
   width: 100%;
 }
-h1,
-h2,
-h3,
-p,
-span {
-  font-family: "Inter", sans-serif;
-}
 /*  დიზაინის სტილები */
 .header {
   display: flex;
@@ -136,18 +129,10 @@ span {
   align-items: center;
   margin-top: 2rem;
 }
-.section2 h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-}
 .section1 h1:hover,
 .section1 p:hover {
   color: #5b47d1;
   transition: 0.2s ease-in-out;
-}
-.section1 p {
-  font-size: 20px;
 }
 .grid-view {
   margin-top: 1rem;
@@ -162,10 +147,12 @@ span {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 2px 3px 3px rgba(111, 109, 122, 0.5);
 }
 .span-div,
 .content {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .span-div {
   display: flex;
@@ -173,41 +160,31 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-.content h3 {
-  font-size: 22px;
-  font-weight: 600;
-}
-.content p {
-  font-size: 15px;
+.im-div {
+  height: 240px;
 }
 #purple {
   background-color: #c7b8ff;
-  height: 240px;
   width: 100%;
 }
 #pink {
   background-color: #ffb8d8;
-  height: 240px;
   width: 100%;
 }
 #blue {
   background-color: #b8e0ff;
-  height: 240px;
   width: 100%;
 }
 #green {
   background-color: #d4ffb8;
-  height: 240px;
   width: 100%;
 }
 #yellow {
   background-color: #ffe4b8;
-  height: 240px;
   width: 100%;
 }
 #orange {
   background-color: #ffd4b8;
-  height: 240px;
   width: 100%;
 }
 /* Section3 სტილები */
@@ -233,11 +210,7 @@ span {
 .section3-nav1 {
   max-width: 380px;
   width: auto;
-}
-.section3-nav1 h3,
-.section3-nav2 h3,
-.section3-nav3 h3 {
-  color: #ffffff;
+  padding: 1rem;
 }
 .section3-nav1,
 .section3-nav2,
@@ -245,7 +218,6 @@ span {
   gap: 10px;
   color: #a1a1a6;
   text-align: left;
-  /* background-color: #b8e0ff; */
   width: 100%;
   padding: 1rem;
   height: auto;
@@ -262,14 +234,18 @@ span {
   color: #a1a1a6;
   transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
 }
-
-.section3-nav2 ul li a:hover,
+.hover:hover {
+  transition: 0.2s ease-in-out;
+  color: #5b47d1;
+  text-decoration: underline;
+  font-weight: bolder;
+}
 .section3-nav3 ul li a:hover {
   transition: 0.2s ease-in-out;
   transform: scale(2.6);
   color: #5b47d1;
   text-decoration: underline;
-  font-weight: 800;
+  font-weight: bolder;
 }
 footer {
   display: flex;

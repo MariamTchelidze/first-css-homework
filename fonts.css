@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/InterDisplay-Regular.woff2);
+}
+
+/* Fonts */
+body {
+  font-family: "Inter";
+}
+
+/* ------------------------------ Header ------------------------------ */
+h1,
+h2,
+h3,
+p,
+span {
+  font-family: "Inter", sans-serif;
+}
+.section2 h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+.section1 p {
+  font-size: 20px;
+}
+.content h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.content p {
+  font-size: 15px;
+}
+.section3-nav1 h3,
+.section3-nav2 h3,
+.section3-nav3 h3 {
+  color: #ffffff;
+}
